@@ -1,0 +1,145 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "city services",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what",
+                        "i don't understand",
+                        "help please",
+                        "option",
+                        "what are my options",
+                        "help",
+                        "options"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "answer",
+                    "slots": [
+                        {
+                            "name": "yesno",
+                            "type": "yesno"
+                        },
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "generic",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "sendnone",
+                            "type": "sendnone"
+                        },
+                        {
+                            "name": "sendall",
+                            "type": "sendall"
+                        }
+                    ],
+                    "samples": [
+                        "{sendnone}",
+                        "{sendall}",
+                        "search {generic}",
+                        "{number}",
+                        "{yesno}"
+                    ]
+                },
+                {
+                    "name": "menu",
+                    "slots": [],
+                    "samples": [
+                        "cancel",
+                        "main menu",
+                        "go back",
+                        "start again",
+                        "restart",
+                        "menu",
+                        "return to the menu",
+                        "start over",
+                        "return"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "yesno",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "nope"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "ya",
+                                    "yea",
+                                    "yep",
+                                    "yeah"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sendall",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "send all"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "send to all"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sendnone",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "send none"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "none"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
